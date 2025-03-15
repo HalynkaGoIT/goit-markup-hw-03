@@ -1,4 +1,15 @@
-
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 ul, ol {
     margin-top: 0;
@@ -15,6 +26,7 @@ h1, h2, h3, h4, h5, h6, p {
 a {
     text-decoration: none;
     color: inherit;
+    display: block;
 }
 
 img {
@@ -23,18 +35,19 @@ img {
 }
 
 button {
-    cursor: pointer;
+cursor: pointer;
 }
 
 body {
-background: #fff;
 font-family: "Roboto", sans-serif;
+background: #fff;
+color: #434455;
 }
 
 .page-header {
 border-bottom: 1px solid #e7e9fc;
-padding-top: 24px;
-padding-bottom: 24px;
+/* padding-top: 24px;
+padding-bottom: 24px; */
 }
 
 .container {
@@ -43,6 +56,10 @@ padding: 0 15px;
 margin-left: auto;
 margin-right: auto;
 border: 1px solid #e7e9fc;
+}
+
+.page-header .container {
+display: flex;
 }
 
 .header-content {
@@ -163,25 +180,10 @@ background-color: #404bbf;
 padding: 120px 0;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 .list-features {
 display: flex;
 align-items: center;
 gap: 24px;
-
-
 }
 
 .title-featers {
